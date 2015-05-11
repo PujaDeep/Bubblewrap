@@ -1,0 +1,53 @@
+package infy.demo;
+import java.awt.Choice;
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String args[])
+	{	
+		
+		
+	checking();
+
+
+	}
+
+	private static void checking() {
+		int choice;
+		float operand1;
+		float operand2;
+		float result;
+			@SuppressWarnings("resource")
+			Scanner userInputScanner = new Scanner(System.in);
+
+		System.out.println("CALCULATOR");
+		System.out.println("Enter your choice of operation");
+		System.out.println("1. Addition\n 2.Subtraction\n 3.Multiplication\n 4.Division");
+		
+
+		choice=userInputScanner.nextInt();
+		
+		
+		System.out.println("Enter the first operand");
+		operand1=userInputScanner.nextFloat();
+		
+		System.out.println("Enter the second operand");
+		operand2=userInputScanner.nextFloat();
+		
+		
+		if(choice==1)
+			 result=addition.add(operand1, operand2);
+		else if (choice==2)
+			result=subtraction.sub(operand1, operand2);
+		else if (choice==3)
+			result=multiplication.mul(operand1, operand2);
+		else if (choice==4)
+			result=division.div(operand1, operand2);
+		else
+			result=0.0f;
+		System.out.println("result=");
+		System.out.println(result);
+	}
+
+}
