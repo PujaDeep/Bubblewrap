@@ -7,6 +7,7 @@ public class Addition {
 		int a = 8, b = 6;
 		System.out.println("Sum of the two numbers is " + (a + b));
 		System.out.println("Difference between the two numbers is "+ (a-b));
+		//new!
 	}
 
 }
